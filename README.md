@@ -10,5 +10,6 @@ This is a full-stack Airbnb clone built with Next.js 13 App Router. It leverages
 - Booking system to reserve listings
 - Integration with MongoDB for data storage
 - UI components styled with Tailwind CSS
+- Fully responsive on all devices
 
 You can visit the site [here](https://wanderers-retreat.vercel.app/).
