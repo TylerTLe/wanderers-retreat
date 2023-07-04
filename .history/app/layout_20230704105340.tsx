@@ -1,5 +1,4 @@
 import ClientOnly from "./components/ClicentOnly";
-import Model from "./components/models/Model";
 import Navbar from "./components/navbar/Navbar";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -20,7 +19,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ClientOnly>
-          <Model title="Heloo World" isOpen />
           <Navbar />
         </ClientOnly>
         {children}

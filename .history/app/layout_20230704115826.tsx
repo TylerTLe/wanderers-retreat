@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <ClientOnly>
-          <Model title="Heloo World" isOpen />
+          <Model title=""isOpen/>
           <Navbar />
         </ClientOnly>
         {children}
