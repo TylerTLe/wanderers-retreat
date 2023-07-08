@@ -1,6 +1,6 @@
 # Wanderers Retreat
 
-This is a full-stack Airbnb clone built with Next.js 13 App Router. It leverages a variety of technologies including React, Tailwind CSS, Prisma, MongoDB, and NextAuth for authentication. <br>
+This is a full-stack Airbnb clone called Wanderers Retreat. Built with Next.js 13 App Router, It leverages a variety of technologies including React, Tailwind CSS, Prisma, MongoDB, and NextAuth for authentication. <br>
 
 ## Features
 
