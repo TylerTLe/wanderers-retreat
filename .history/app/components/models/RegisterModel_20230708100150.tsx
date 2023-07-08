@@ -7,7 +7,6 @@ import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import useRegisterModel from "@/app/hooks/useRegisterModel";
 import Model from "./Model";
-import Heading from "../Heading";
 
 const RegisterModel = () => {
   const registerModel = useRegisterModel();
@@ -41,11 +40,7 @@ const RegisterModel = () => {
       });
   };
 
-  const bodyContent = (
-    <div className=" flex flex-col gap-4">
-      <Heading />
-    </div>
-  )
+  const bodyContent
 
   return (
     <Model
@@ -55,7 +50,6 @@ const RegisterModel = () => {
       actionLabel="Continue"
       onClose={registerModel.onClose}
       onSubmit={handleSubmit(onSubmit)}
-      body={bodyContent}
     />
   );
 };

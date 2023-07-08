@@ -40,7 +40,7 @@ const UserMenu = () => {
               <MenuItem onClick={() => {}} label="Login" />
             </>
             <>
-              <MenuItem onClick={registerModel.onOpen} label="Sign up" />
+              <MenuItem onClick={registerModel.on} label="Sign up" />
             </>
           </div>
         </div>

@@ -7,7 +7,6 @@ import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import useRegisterModel from "@/app/hooks/useRegisterModel";
 import Model from "./Model";
-import Heading from "../Heading";
 
 const RegisterModel = () => {
   const registerModel = useRegisterModel();

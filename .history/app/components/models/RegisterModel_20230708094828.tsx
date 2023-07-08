@@ -6,8 +6,6 @@ import { FcGoogle } from "react-icons/fc";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import useRegisterModel from "@/app/hooks/useRegisterModel";
-import Model from "./Model";
-import Heading from "../Heading";
 
 const RegisterModel = () => {
   const registerModel = useRegisterModel();
@@ -28,36 +26,15 @@ const RegisterModel = () => {
   const onSubmit: SubmitHandler<FieldValues> = (data) => {
     setIsLoading(true);
 
-    axios
-      .post("/api/register", data)
+    axios.post("/api/register", data);
       .then(() => {
         registerModel.onClose();
       })
       .catch((error) => {
-        console.log(error);
+        console.log(error)
       })
-      .finally(() => {
-        setIsLoading(false);
-      });
   };
-
-  const bodyContent = (
-    <div className=" flex flex-col gap-4">
-      <Heading />
-    </div>
-  )
-
-  return (
-    <Model
-      disabled={isLoading}
-      isOpen={registerModel.isOpen}
-      title="Register"
-      actionLabel="Continue"
-      onClose={registerModel.onClose}
-      onSubmit={handleSubmit(onSubmit)}
-      body={bodyContent}
-    />
-  );
+  return <div></div>;
 };
 
 export default RegisterModel;

@@ -7,7 +7,6 @@ import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import useRegisterModel from "@/app/hooks/useRegisterModel";
 import Model from "./Model";
-import Heading from "../Heading";
 
 const RegisterModel = () => {
   const registerModel = useRegisterModel();
@@ -40,22 +39,14 @@ const RegisterModel = () => {
         setIsLoading(false);
       });
   };
-
-  const bodyContent = (
-    <div className=" flex flex-col gap-4">
-      <Heading />
-    </div>
-  )
-
   return (
     <Model
       disabled={isLoading}
-      isOpen={registerModel.isOpen}
+      isOpen={registerModel}
       title="Register"
       actionLabel="Continue"
-      onClose={registerModel.onClose}
+      onClose={RegisterModel.onClose}
       onSubmit={handleSubmit(onSubmit)}
-      body={bodyContent}
     />
   );
 };
