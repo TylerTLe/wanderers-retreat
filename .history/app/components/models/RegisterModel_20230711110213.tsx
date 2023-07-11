@@ -87,7 +87,7 @@ const RegisterModel = () => {
       outline
       label="Continue with Google"
       icon={FcGoogle}
-      onClick={() => signIn('google')}
+      onClick={() => signIn('')}
       />
       <Button 
       outline
