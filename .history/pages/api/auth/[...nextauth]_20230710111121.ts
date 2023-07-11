@@ -64,4 +64,4 @@ export const authOptions: AuthOptions = {
 
 export default NextAuth(authOptions);
 
-// 2:26:56
+// 2:

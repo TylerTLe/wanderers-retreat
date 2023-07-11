@@ -93,7 +93,7 @@ const RegisterModel = () => {
       outline
       label="Continue with Github"
       icon={AiFillGithub}
-      onClick={() => signIn('github')}
+      onClick={() => signIn}
       />
       <div className="
       text-neutral-500
