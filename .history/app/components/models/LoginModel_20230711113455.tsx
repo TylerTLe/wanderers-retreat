@@ -53,11 +53,6 @@ const LoginModel = () => {
     });
   }
 
-  const onToggle = useCallback(() => {
-    loginModel.onClose();
-    registerModel.onOpen();
-  }, [loginModel, registerModel])
-
   const bodyContent = (
     <div className=" flex flex-col gap-4">
       <Heading title="Welcome back" subtitle="Login to your account!" />
@@ -96,7 +91,7 @@ const LoginModel = () => {
         icon={AiFillGithub}
         onClick={() => signIn('github')}
       />
-      <div className="
+            <div className="
       text-neutral-500 text-center mt-4 font-light">
         <p>First time using Airbnb?
           <span 
