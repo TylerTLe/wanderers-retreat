@@ -34,15 +34,11 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
     }
 
     const url = qs.stringifyUrl({
-        url: '/',
-        query: updatedQuery
-    }, {skipNull: true});
-
-    router.push(url);
-  }, [label, params, router]);
+        url: '/'
+    })
+  }, []);
   return (
     <div
-    onClick={handleClick}
       className={`
             flex 
             flex-col 

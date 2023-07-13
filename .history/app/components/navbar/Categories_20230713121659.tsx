@@ -1,9 +1,7 @@
 import Container from "../Container";
 import { TbBeach, TbMountain, TbPool } from 'react-icons/tb'
-import { GiBoatFishing, GiIsland, GiWindmill, GiCastle, GiForestCamp, GiCaveEntrance, GiCactus, GiBarn } from 'react-icons/gi'
+import { GiBoatFishing, GiIsland, GiWindmill, GiCastle } from 'react-icons/gi'
 import { MdOutlineVilla } from 'react-icons/md'
-import { BsSnow } from 'react-icons/bs'
-import { IoDiamond } from 'react-icons/io5'
 import { FaSkiing } from 'react-icons/fa'
 import CategoryBox from "../CategoryBox";
 import { usePathname, useSearchParams } from "next/navigation";
@@ -54,37 +52,7 @@ export const categories = [
     {
         label: 'Castle',
         icon: GiCastle,
-        description: 'This property is in a castle!'
-    },
-    {
-        label: 'Camping',
-        icon: GiForestCamp,
-        description: 'This property has camping activities!'
-    },
-    {
-        label: 'Arctic',
-        icon: BsSnow,
-        description: 'This property is in the arctic!'
-    },
-    {
-        label: 'Cave',
-        icon: GiCaveEntrance,
-        description: 'This property is in a cave!'
-    },
-    {
-        label: 'Desert',
-        icon: GiCactus,
-        description: 'This property is in the desert!'
-    },
-    {
-        label: 'Barns',
-        icon: GiBarn,
-        description: 'This property is in a barn!'
-    },
-    {
-        label: 'Lux',
-        icon: IoDiamond,
-        description: 'This property is luxurious!'
+        description: 'This property has skiing activites!'
     },
 ]
 

@@ -39,10 +39,9 @@ const CategoryBox: React.FC<CategoryBoxProps> = ({
     }, {skipNull: true});
 
     router.push(url);
-  }, [label, params, router]);
+  }, [label, par]);
   return (
     <div
-    onClick={handleClick}
       className={`
             flex 
             flex-col 
