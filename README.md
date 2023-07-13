@@ -12,4 +12,4 @@ This is a full-stack Airbnb clone called Wanderers Retreat. Built with Next.js 1
 - UI components styled with Tailwind CSS
 - Fully responsive on all devices
 
-You can visit the site [here](https://wanderers-retreat.vercel.app/).
+You can visit the website [here](https://wanderers-retreat.vercel.app/).
