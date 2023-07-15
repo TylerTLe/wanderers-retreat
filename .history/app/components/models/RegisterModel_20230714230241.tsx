@@ -5,10 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-
 import useRegisterModel from "@/app/hooks/useRegisterModel";
-import useLoginModel from "@/app/hooks/useLoginModel";
-
 import Model from "./Model";
 import Heading from "../Heading";
 import Input from "../inputs/Input";
@@ -16,10 +13,8 @@ import { toast } from "react-hot-toast";
 import Button from "../Button";
 import { signIn } from "next-auth/react";
 
-
 const RegisterModel = () => {
   const registerModel = useRegisterModel();
-  const loginModel = useLoginModel();
   const [isLoading, setIsLoading] = useState(false);
 
   const {
@@ -51,10 +46,10 @@ const RegisterModel = () => {
   };
 
   const onToggle = useCallback(() => {
-    registerModel.onClose();
-    loginModel.onOpen();
+    loginModel.onClose();
+    registerModel.onOpen();
   }, [loginModel, registerModel])
-
+  
   const bodyContent = (
     <div className=" flex flex-col gap-4">
       <Heading 
@@ -116,7 +111,7 @@ const RegisterModel = () => {
             Already have an account?
           </div>
           <div 
-          onClick={onToggle}
+          onClick={registerModel.onClose}
           className="text-neutral-800 cursor-pointer hover:underline">
             Log in
           </div>

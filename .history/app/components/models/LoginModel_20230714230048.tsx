@@ -16,10 +16,9 @@ import { useRouter } from "next/navigation";
 
 const LoginModel = () => {
   const router = useRouter();
-
+  
   const registerModel = useRegisterModel();
   const loginModel = useLoginModel();
-  
   const [isLoading, setIsLoading] = useState(false);
 
   const {

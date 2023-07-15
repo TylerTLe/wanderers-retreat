@@ -116,7 +116,7 @@ const RegisterModel = () => {
             Already have an account?
           </div>
           <div 
-          onClick={onToggle}
+          onClick={onto}
           className="text-neutral-800 cursor-pointer hover:underline">
             Log in
           </div>

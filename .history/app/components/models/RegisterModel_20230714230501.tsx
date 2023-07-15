@@ -5,7 +5,6 @@ import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
 import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
-
 import useRegisterModel from "@/app/hooks/useRegisterModel";
 import useLoginModel from "@/app/hooks/useLoginModel";
 
@@ -51,8 +50,8 @@ const RegisterModel = () => {
   };
 
   const onToggle = useCallback(() => {
-    registerModel.onClose();
-    loginModel.onOpen();
+    register.onClose();
+    LoginModel.onOpen();
   }, [loginModel, registerModel])
 
   const bodyContent = (
@@ -116,7 +115,7 @@ const RegisterModel = () => {
             Already have an account?
           </div>
           <div 
-          onClick={onToggle}
+          onClick={registerModel.onClose}
           className="text-neutral-800 cursor-pointer hover:underline">
             Log in
           </div>

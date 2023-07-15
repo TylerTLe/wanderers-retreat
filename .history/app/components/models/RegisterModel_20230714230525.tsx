@@ -51,8 +51,8 @@ const RegisterModel = () => {
   };
 
   const onToggle = useCallback(() => {
-    registerModel.onClose();
-    loginModel.onOpen();
+    register.onClose();
+    loginModeloginModel.onOpen();
   }, [loginModel, registerModel])
 
   const bodyContent = (
@@ -116,7 +116,7 @@ const RegisterModel = () => {
             Already have an account?
           </div>
           <div 
-          onClick={onToggle}
+          onClick={registerModel.onClose}
           className="text-neutral-800 cursor-pointer hover:underline">
             Log in
           </div>
