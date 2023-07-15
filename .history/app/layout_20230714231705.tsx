@@ -1,7 +1,7 @@
 import ClientOnly from "./components/ClicentOnly";
-import "./globals.css";
 
 import Navbar from "./components/navbar/Navbar";
+import "./globals.css";
 import { Inter } from "next/font/google";
 import ToasterProvider from '@/app/providers/ToasterProvider';
 import getCurrentUser from './actions/getCurrentUser';

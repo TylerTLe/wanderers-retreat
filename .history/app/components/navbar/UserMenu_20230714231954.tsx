@@ -29,7 +29,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
 
   const onRent = useCallback(() => {
     if (!currentUser) {
-      return rentModel.onOpen();
+      return loginModel.onOpen();
     }
 
     rentModel.onOpen();
@@ -77,7 +77,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             label="My properties"
             />
             <MenuItem 
-            onClick={rentModel.onOpen} 
+            onClick={() => {}} 
             label="Airbnb my home"
             />
             <hr />

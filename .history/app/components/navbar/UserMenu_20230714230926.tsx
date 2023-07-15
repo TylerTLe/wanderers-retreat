@@ -5,7 +5,6 @@ import Avatar from "../Avatar";
 import { useState, useCallback } from "react";
 import MenuItem from "./MenuItem";
 
-import useRentModel from "@/app/hooks/useRentModel";
 import useRegisterModel from "@/app/hooks/useRegisterModel";
 import useLoginModel from "@/app/hooks/useLoginModel";
 import { signOut } from "next-auth/react";
@@ -20,26 +19,19 @@ const UserMenu: React.FC<UserMenuProps> = ({
 }) => {
   const registerModel = useRegisterModel();
   const loginModel = useLoginModel();
-  const rentModel = useRentModel();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = useCallback(() => {
     setIsOpen((value) => !value);
   }, []);
 
-  const onRent = useCallback(() => {
-    if (!currentUser) {
-      return rentModel.onOpen();
-    }
 
-    rentModel.onOpen();
-  }, [currentUser, loginModel, rentModel])
-
+  
   return (
     <div className=" relative">
       <div className="flex flex-row items-center gap-3">
         <div
-          onClick={onRent}
+          onClick={() => {}}
           className="hidden md:block text-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer"
         >
           Airbnb your home
@@ -77,7 +69,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
             label="My properties"
             />
             <MenuItem 
-            onClick={rentModel.onOpen} 
+            onClick={() => {}} 
             label="Airbnb my home"
             />
             <hr />
