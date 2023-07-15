@@ -3,8 +3,8 @@
 import useRentModel from "@/app/hooks/useRentModel";
 import Model from "./Model";
 import CategoryInput from "../inputs/CategoryInputs";
-import Heading from "../Heading";
 import { useMemo, useState } from "react";
+import Heading from "../Heading";
 import { categories } from "../navbar/Categories";
 import { FieldValues, useForm } from "react-hook-form";
 

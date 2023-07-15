@@ -1,6 +1,0 @@
-const MenuItem = () => {
-    return (
-        
-    );
-
-}
