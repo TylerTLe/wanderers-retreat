@@ -52,7 +52,7 @@ const Model: React.FC<ModelProps> = ({
     }
 
     onSubmit();
-  }, [disabled, onSubmit]);
+  }, [onSubmit, disabled]);
 
   const handleSecondaryAction = useCallback(() => {
     if (disabled || !secondaryAction) {
@@ -60,7 +60,7 @@ const Model: React.FC<ModelProps> = ({
     }
 
     secondaryAction();
-  }, [disabled, secondaryAction]);
+  }, [secondaryAction, disabled]);
 
   if (!isOpen) {
     return null;

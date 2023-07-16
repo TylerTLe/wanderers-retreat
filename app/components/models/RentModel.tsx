@@ -3,10 +3,11 @@
 import useRentModel from "@/app/hooks/useRentModel";
 import Model from "./Model";
 import CategoryInput from "../inputs/CategoryInputs";
-import Heading from "../Heading";
+import Heading from '../Heading';
 import { useMemo, useState } from "react";
 import { categories } from "../navbar/Categories";
 import { FieldValues, useForm } from "react-hook-form";
+import CountrySelect from "../inputs/CountrySelect";
 
 
 enum STEPS {
@@ -47,6 +48,7 @@ const RentModel = () => {
     });
 
     const category = watch('category');
+    const location = watch('location');
 
     const setCustomValue = (id: string, value: any) => {
         setValue(id, value, {
@@ -100,11 +102,27 @@ const RentModel = () => {
         </div>
     )
 
+    if (step === STEPS.LOCATION) {
+        bodyContent = (
+            <div className="flex flex-col gap-8">
+                <Heading 
+                 title="Where is your place located?"
+                 subtitle="Help guests find you!"
+                />
+                <CountrySelect
+                value={location}
+                    onChange={(value) => setCustomValue('location', value)}
+                
+                />
+            </div>
+        )
+    }
+
     return ( 
         <Model
         isOpen={rentModel.isOpen}
         onClose={rentModel.onClose}
-        onSubmit={rentModel.onClose}
+        onSubmit={onNext}
         actionLabel={actionLabel}
         secondaryActionLabel={secondaryActionLabel}
         secondaryAction={step === STEPS.CATEGORY ? undefined : onBack}
