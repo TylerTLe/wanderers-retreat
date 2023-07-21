@@ -44,7 +44,7 @@ const Model: React.FC<ModelProps> = ({
     setTimeout(() => {
       onClose();
     }, 300);
-  }, [disabled, onClose]);
+  }, [onClose, disabled]);
 
   const handleSubmit = useCallback(() => {
     if (disabled) {
@@ -98,10 +98,10 @@ const Model: React.FC<ModelProps> = ({
                 <div className=" flex flex-row items-center gap-4 w-full">
                   {secondaryAction && secondaryActionLabel && (
                 <Button
-                outline
                 disabled={disabled}
                 label={secondaryActionLabel}
                 onClick={handleSecondaryAction}
+                outline
                 />
                   )}
                   <Button 
