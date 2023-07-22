@@ -1,15 +1,14 @@
-import ClientOnly from "./components/ClicentOnly";
+import ClientOnly from "./components/ClientOnly";
 import "./globals.css";
 
 import Navbar from "./components/navbar/Navbar";
 import { Inter } from "next/font/google";
-import ToasterProvider from '@/app/providers/ToasterProvider';
-import getCurrentUser from './actions/getCurrentUser';
+import ToasterProvider from "@/app/providers/ToasterProvider";
+import getCurrentUser from "./actions/getCurrentUser";
 
 import LoginModel from "./components/models/LoginModel";
 import RegisterModel from "./components/models/RegisterModel";
 import RentModel from "./components/models/RentModel";
-
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,9 +32,9 @@ export default async function RootLayout({
           <RentModel />
           <LoginModel />
           <RegisterModel />
-          <Navbar currentUser={currentUser}/>
+          <Navbar currentUser={currentUser} />
         </ClientOnly>
-        {children}
+        <div className="pb-20 pt-28">{children}</div>
       </body>
     </html>
   );
