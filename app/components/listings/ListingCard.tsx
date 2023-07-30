@@ -91,12 +91,12 @@ const ListingCard: React.FC<ListingCardProps> = ({
           {!reservation && <div className="font-light">night</div>}
         </div>
         {onAction && actionLabel && (
-            <Button 
+          <Button
             disabled={disabled}
             small
             label={actionLabel}
             onClick={handleCancel}
-            />
+          />
         )}
       </div>
     </div>
