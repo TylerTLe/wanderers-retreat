@@ -9,6 +9,7 @@ import getCurrentUser from "./actions/getCurrentUser";
 import LoginModel from "./components/models/LoginModel";
 import RegisterModel from "./components/models/RegisterModel";
 import RentModel from "./components/models/RentModel";
+import SearchModel from "./components/models/SearchModel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default async function RootLayout({
       <body className={inter.className}>
         <ClientOnly>
           <ToasterProvider />
+          <SearchModel />
           <RentModel />
           <LoginModel />
           <RegisterModel />
