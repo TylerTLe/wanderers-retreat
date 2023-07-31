@@ -9,7 +9,7 @@ import { useRouter, useSearchParams } from 'next/navigation';
 
 import useSearchModel from "@/app/hooks/useSearchModel";
 
-import Modal from "./Model";
+import Model from "./Model";
 import Calendar from "../inputs/Calendar";
 import Counter from "../inputs/Counter";
 import CountrySelect, { 
@@ -182,7 +182,7 @@ const SearchModel = () => {
   }
 
   return (
-    <Modal
+    <Model
       isOpen={searchModel.isOpen}
       title="Filters"
       actionLabel={actionLabel}
