@@ -6,7 +6,7 @@ This is a full-stack Airbnb clone called Wanderers Retreat. Built with Next.js 1
 
 - User registration and authentication using NextAuth
 - User profiles
-- Creating and managing listings
+- Ability to create, manage and delete listings
 - Search functionality to find available listings
 - Booking system to reserve listings
 - Integration with MongoDB for data storage
