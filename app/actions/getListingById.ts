@@ -12,7 +12,7 @@ export default async function getListingById(
         
         const listing = await prisma.listing.findUnique({
             where: {
-                id: listingId
+                id: listingId,
             },
             include: {
                 user: true
