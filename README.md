@@ -2,6 +2,8 @@
 
 This is a full-stack Airbnb clone called Wanderers Retreat. Built with Next.js 13 App Router, It leverages a variety of technologies including React, Tailwind CSS, Prisma, MongoDB, and NextAuth for authentication. <br>
 
+The website can be visited [here](https://wanderers-retreat.vercel.app/).
+
 ## Features
 
 - Tailwind design
@@ -27,5 +29,3 @@ This is a full-stack Airbnb clone called Wanderers Retreat. Built with Next.js 1
 - How to fetch data in server react components by directly accessing database without api
 - How to handle files like error.tsx and loading.tsx which are new Next 13 templating files to unify loading and error handling
 - How to handle relations between Server and Child components
-
-The website can be visited [here](https://wanderers-retreat.vercel.app/).
